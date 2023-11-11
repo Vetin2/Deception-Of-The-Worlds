@@ -1,0 +1,28 @@
+import random
+
+def railway_riddles():
+print("Welcome to Railway Riddles!")
+print("Try to solve the following riddles related to trains.")
+
+riddles = {
+"I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?": "Train",
+"I run all day and never walk. I often murmur, but I never talk. I have a bed, but never sleep. What am I?": "Railway track",
+"What can travel around the world while staying in a corner?": "Stamp"
+#
+}
+
+score = 0
+riddle_list = list(riddles.keys())
+random.shuffle(riddle_list) # 
+for riddle in riddle_list:
+print(riddle)
+user_answer = input("Your answer: ").capitalize()
+if user_answer == riddles[riddle]:
+print("Correct! You answered the riddle correctly.")
+score += 1
+else:
+print(f"Incorrect. The correct answer is '{riddles[riddle]}'.")
+
+print("Railway Riddles is over! Your final score is:", score)
+
+railway_riddles()
