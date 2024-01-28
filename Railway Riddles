@@ -13,7 +13,7 @@ riddles = {
 
 score = 0
 riddle_list = list(riddles.keys())
-random.shuffle(riddle_list) # 1123233233
+random.shuffle(riddle_list) # 112323233
 for riddle in riddle_list:
 print(riddle)
 user_answer = input("Your answer: ").capitalize()
